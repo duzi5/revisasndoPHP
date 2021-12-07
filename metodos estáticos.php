@@ -1,32 +1,13 @@
-<?php 
 
-class Funcionario { 
-    public $nome = 'josé'; 
-    public $telefone = '11 999999'; 
-    public $numFilhos = 2; 
+<?php
 
-    function resumirCadFunc(){
-        return  "$this->nome possui $this->numFilhos filhos";
-    }
+use Exemplo as GlobalExemplo;
 
-    function modificarNumFilhos(){
-
-    }
-
-}
-
-
-    $y = new Funcionario();
-
-    echo $y->resumirCadFunc();
-
-
-
-   class Exemplo {
+class Exemplo {
        public static $atributo1 = "Eu sou um atributo estático ";
        public $atributo2 = "Eu sou um atributo normal ";
 
-
+ 
 
        public static function metodo1() { 
            echo 'Eu sou um método estático';
@@ -42,7 +23,9 @@ class Funcionario {
 
 
 
-    echo Exemplo::$atributo1
+    echo Exemplo::$atributo1;
+    echo'<br>';
+    echo Exemplo::metodo1();
 
 
 
